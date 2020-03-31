@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+main {
+  height: 100%;
+  display: grid;
+  /* grid-template-columns: 33% 33% 33%; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  height: 100vh;
+  width: 850px;
+  max-width: 850px;
+}
+main section.nasa-top {
+  background-image: url('../nasa.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Play', sans-serif;
+  height: 100%;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main section.nasa-top p {
+  color: white;
+  font-size: 74px;
+}
+main section.nasa-bottom {
+  font-family: 'Roboto', sans-serif;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #eee;
+}
+.nasa-content {
+  /* border: 1px solid blue; */
+}
+.nasa-contact form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.nasa-contact form button {
+  height: 34px;
+  width: 72px;
+  margin: 20px 0;
+  background-color: rgb(92, 95, 99);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 350ms ease;
+}
+.nasa-contact form button:hover {
+  background-color: rgb(68, 78, 91);
+  transform: translateY(-1px);
+}
