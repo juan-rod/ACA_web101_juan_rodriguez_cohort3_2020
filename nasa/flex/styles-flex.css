@@ -40,6 +40,12 @@ main section.nasa-bottom {
   padding: 20px;
   background-color: #eee;
 }
+.flex-space-btwn-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .nasa-contact form .form-group {
   display: flex;
